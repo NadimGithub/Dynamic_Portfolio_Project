@@ -89,21 +89,21 @@ USE_I18N = True
 USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
-# STATIC_URL = 'static/'
-# STATICFILES_DIRS = [
-#     os.path.join(BASE_DIR, 'portfolio/static'),
-# ]
-# STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATIC_URL = 'static/'
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'portfolio/static'),
+]
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
-# # Media files
-# MEDIA_URL = '/media/'
-# MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
-
-STATIC_URL = '/static/'
-STATIC_ROOT = '/home/ubuntu/project/Dynamic_Portfolio_Project/static/'
-
+# Media files
 MEDIA_URL = '/media/'
-MEDIA_ROOT = '/home/ubuntu/project/Dynamic_Portfolio_Project/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+# STATIC_URL = '/static/'
+# STATIC_ROOT = '/home/ubuntu/project/Dynamic_Portfolio_Project/static/'
+
+# MEDIA_URL = '/media/'
+# MEDIA_ROOT = '/home/ubuntu/project/Dynamic_Portfolio_Project/media/'
 
 # Default primary key field type
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
